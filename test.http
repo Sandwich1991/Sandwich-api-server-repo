@@ -1,0 +1,28 @@
+GET http://localhost:3000/api/members
+
+###
+PUT http://localhost:3000/api/members/2
+Content-Type: application/json
+
+{
+    "position" : "Chief Developer"
+}
+
+###
+POST http://localhost:3000/api/members/
+Content-Type: application/json
+
+{
+    "id" : 3,
+    "name" : "KT",
+    "team" : "nothing",
+    "position" : "hobo",
+    "emainAddress" : "jake@google.com",
+    "phoneNumber" : "010-xxxx-xxxx",
+    "admissionDate" : "2018/12/10",
+    "bithday" : "1994/11/08",
+    "profileImage" : "profile11.png"
+}
+
+###
+DELETE http://localhost:3000/api/members/3
